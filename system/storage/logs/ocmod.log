@@ -1,0 +1,441 @@
+2020-04-22 16:33:03 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: fondy_payment
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: public function index() {
+LINE: 11
+
+FILE: catalog/view/theme/default/template/checkout/checkout.tpl
+CODE: <h1><?php echo $heading_title; ?></h1>
+LINE: 26
+----------------------------------------------------------------
+MOD: OcStore 2.3.x track number
+
+FILE: admin/controller/sale/order.php
+CODE: $data['shipping_method'] = $order_info['shipping_method'];
+LINE: 567
+LINE: 942
+CODE: public function history() {
+LINE: 1545
+
+FILE: admin/model/sale/order.php
+CODE: $order_query->row['order_id'],
+LINE: 96
+
+FILE: catalog/model/checkout/order.php
+CODE: $order_query->row['order_id'],
+LINE: 170
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: <td><?php echo $text_reward; ?></td>
+LINE: 100
+CODE: <?php echo $footer; ?>
+LINE: 700
+
+FILE: catalog/model/account/order.php
+CODE: $order_query->row['order_id'],
+LINE: 46
+
+FILE: catalog/controller/account/order.php
+CODE: if ($order_info['invoice_no']) {
+LINE: 210
+
+FILE: catalog/view/theme/default/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+----------------------------------------------------------------
+MOD: |Quickfix by iSenseLabs
+
+FILE: admin/controller/extension/installer.php
+CODE: 'extension/installer/ftp'
+LINE: 131
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/'. $this->rewrite_step('ftp', 'localremove'), 'token=' . $this->session->data['token'],
+NOT FOUND - OPERATION SKIPPED!
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/'. $this->rewrite_step('localcopy', 'localremove'), 'token=' . $this->session->data['token'],
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function unzip() {
+LINE: 292
+----------------------------------------------------------------
+2020-04-22 16:38:39 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: fondy_payment
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: public function index() {
+LINE: 11
+
+FILE: catalog/view/theme/default/template/checkout/checkout.tpl
+CODE: <h1><?php echo $heading_title; ?></h1>
+LINE: 26
+----------------------------------------------------------------
+MOD: OcStore 2.3.x track number
+
+FILE: admin/controller/sale/order.php
+CODE: $data['shipping_method'] = $order_info['shipping_method'];
+LINE: 567
+LINE: 942
+CODE: public function history() {
+LINE: 1545
+
+FILE: admin/model/sale/order.php
+CODE: $order_query->row['order_id'],
+LINE: 96
+
+FILE: catalog/model/checkout/order.php
+CODE: $order_query->row['order_id'],
+LINE: 170
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: <td><?php echo $text_reward; ?></td>
+LINE: 100
+CODE: <?php echo $footer; ?>
+LINE: 700
+
+FILE: catalog/model/account/order.php
+CODE: $order_query->row['order_id'],
+LINE: 46
+
+FILE: catalog/controller/account/order.php
+CODE: if ($order_info['invoice_no']) {
+LINE: 210
+
+FILE: catalog/view/theme/basecart/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+
+FILE: catalog/view/theme/default/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+----------------------------------------------------------------
+MOD: |Quickfix by iSenseLabs
+
+FILE: admin/controller/extension/installer.php
+CODE: 'extension/installer/ftp'
+LINE: 131
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/'. $this->rewrite_step('ftp', 'localremove'), 'token=' . $this->session->data['token'],
+NOT FOUND - OPERATION SKIPPED!
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/'. $this->rewrite_step('localcopy', 'localremove'), 'token=' . $this->session->data['token'],
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function unzip() {
+LINE: 292
+----------------------------------------------------------------
+MOD: Basecart Theme
+
+FILE: catalog/controller/common/header.php
+CODE: $data['telephone'] = $this->config->get('config_telephone');
+LINE: 92
+
+FILE: catalog/controller/extension/module/slideshow.php
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+LINE: 8
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+LINE: 8
+----------------------------------------------------------------
+2020-04-26 7:02:51 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: fondy_payment
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: public function index() {
+LINE: 11
+
+FILE: catalog/view/theme/default/template/checkout/checkout.tpl
+CODE: <h1><?php echo $heading_title; ?></h1>
+LINE: 26
+----------------------------------------------------------------
+MOD: OcStore 2.3.x track number
+
+FILE: admin/controller/sale/order.php
+CODE: $data['shipping_method'] = $order_info['shipping_method'];
+LINE: 567
+LINE: 942
+CODE: public function history() {
+LINE: 1545
+
+FILE: admin/model/sale/order.php
+CODE: $order_query->row['order_id'],
+LINE: 96
+
+FILE: catalog/model/checkout/order.php
+CODE: $order_query->row['order_id'],
+LINE: 170
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: <td><?php echo $text_reward; ?></td>
+LINE: 100
+CODE: <?php echo $footer; ?>
+LINE: 700
+
+FILE: catalog/model/account/order.php
+CODE: $order_query->row['order_id'],
+LINE: 46
+
+FILE: catalog/controller/account/order.php
+CODE: if ($order_info['invoice_no']) {
+LINE: 210
+
+FILE: catalog/view/theme/basecart/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+
+FILE: catalog/view/theme/default/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+----------------------------------------------------------------
+MOD: |Quickfix by iSenseLabs
+
+FILE: admin/controller/extension/installer.php
+CODE: 'extension/installer/ftp'
+LINE: 131
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/'. $this->rewrite_step('ftp', 'localremove'), 'token=' . $this->session->data['token'],
+NOT FOUND - OPERATION SKIPPED!
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/'. $this->rewrite_step('localcopy', 'localremove'), 'token=' . $this->session->data['token'],
+NOT FOUND - OPERATION SKIPPED!
+CODE: public function unzip() {
+LINE: 292
+----------------------------------------------------------------
+MOD: Basecart Theme
+
+FILE: catalog/controller/common/header.php
+CODE: $data['telephone'] = $this->config->get('config_telephone');
+LINE: 92
+
+FILE: catalog/controller/extension/module/slideshow.php
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+LINE: 8
+
+FILE: catalog/controller/extension/module/carousel.php
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
+LINE: 8
+----------------------------------------------------------------
+MOD: GixOC.ru - <b>Smart Customer Dashboard</b>
+
+FILE: catalog/controller/account/account.php
+CODE: $this->response->setOutput($this->load->view('account/account', $data));
+LINE: 168
+
+FILE: catalog/controller/affiliate/account.php
+CODE: $this->response->setOutput($this->load->view('affiliate/account', $data));
+LINE: 132
+
+FILE: catalog/controller/extension/module/account.php
+CODE: return $this->load->view('extension/module/account', $data);
+LINE: 82
+
+FILE: catalog/controller/extension/module/affiliate.php
+CODE: return $this->load->view('extension/module/affiliate', $data);
+LINE: 70
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 132
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 111
+LINE: 403
+LINE: 451
+
+FILE: catalog/controller/account/download.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 113
+
+FILE: catalog/controller/account/reward.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 98
+
+FILE: catalog/controller/account/return.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 100
+LINE: 226
+LINE: 280
+LINE: 567
+LINE: 663
+
+FILE: catalog/controller/account/transaction.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 96
+
+FILE: catalog/controller/account/recurring.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 102
+LINE: 223
+LINE: 271
+
+FILE: catalog/controller/affiliate/tracking.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 58
+
+FILE: catalog/controller/affiliate/transaction.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 96
+
+FILE: catalog/view/theme/basecart/template/account/wishlist.tpl
+CODE: <div class="pull-right">
+LINE: 65
+
+FILE: catalog/view/theme/default/template/account/wishlist.tpl
+CODE: <div class="pull-right">
+LINE: 65
+
+FILE: catalog/view/theme/basecart/template/account/order_list.tpl
+CODE: <div class="pull-right">
+LINE: 55
+
+FILE: catalog/view/theme/default/template/account/order_list.tpl
+CODE: <div class="pull-right">
+LINE: 55
+
+FILE: catalog/view/theme/basecart/template/account/download.tpl
+CODE: <div class="pull-right">
+LINE: 51
+
+FILE: catalog/view/theme/default/template/account/download.tpl
+CODE: <div class="pull-right">
+LINE: 51
+
+FILE: catalog/view/theme/basecart/template/account/reward.tpl
+CODE: <div class="pull-right">
+LINE: 54
+
+FILE: catalog/view/theme/default/template/account/reward.tpl
+CODE: <div class="pull-right">
+LINE: 54
+
+FILE: catalog/view/theme/basecart/template/account/return_list.tpl
+CODE: <div class="pull-right">
+LINE: 53
+
+FILE: catalog/view/theme/default/template/account/return_list.tpl
+CODE: <div class="pull-right">
+LINE: 53
+
+FILE: catalog/view/theme/basecart/template/account/transaction.tpl
+CODE: <div class="pull-right">
+LINE: 50
+
+FILE: catalog/view/theme/default/template/account/transaction.tpl
+CODE: <div class="pull-right">
+LINE: 50
+
+FILE: catalog/view/theme/basecart/template/account/recurring_list.tpl
+CODE: <div class="pull-right">
+LINE: 48
+
+FILE: catalog/view/theme/default/template/account/recurring_list.tpl
+CODE: <div class="pull-right">
+LINE: 48
+
+FILE: catalog/view/theme/basecart/template/affiliate/tracking.tpl
+CODE: <div class="pull-right">
+LINE: 40
+
+FILE: catalog/view/theme/default/template/affiliate/tracking.tpl
+CODE: <div class="pull-right">
+LINE: 40
+
+FILE: catalog/view/theme/basecart/template/affiliate/transaction.tpl
+CODE: <div class="pull-right">
+LINE: 47
+
+FILE: catalog/view/theme/default/template/affiliate/transaction.tpl
+CODE: <div class="pull-right">
+LINE: 47
+----------------------------------------------------------------
